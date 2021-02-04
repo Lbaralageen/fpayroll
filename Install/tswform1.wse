@@ -1,0 +1,1512 @@
+Document Type: WSE
+item: Global
+  Version=6.01
+  Title=IFORMS Installation
+  Flags=00100100
+  Split=3000
+  Languages=65 0 0 64 64 0 64 0 64 0 0 0 0 0 0 0
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 56 147
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010011010000000010
+  Log Pathname=%MAINDIR%\INSTALL.LOG
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=16000
+  EXE Filename=.\distrib\setup32.exe
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINNT\SYSTEM32
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~1\Wise
+  Variable Flags2=00001000
+  Variable Name3=_ODBC16_
+  Variable Default3=C:\WINDOWS\SYSTEM
+  Variable Flags3=00001000
+  Variable Name4=_ODBC32_
+  Variable Default4=C:\PROGRA~1\Wise\Runtime\ODBC30
+  Variable Flags4=00001000
+  Variable Name5=_ALIASNAME_
+  Variable Flags5=00001000
+  Variable Name6=_ALIASPATH_
+  Variable Flags6=00001000
+  Variable Name7=_ALIASTYPE_
+  Variable Flags7=00001000
+  Variable Name8=_WIN_
+  Variable Default8=C:\WINDOWS
+  Variable Flags8=00001000
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+remarked item: Display Graphic
+  Pathname=G:\Install\title.grf
+  X Position=10
+  Y Position=10
+  Flags=0000000001000000
+end
+item: Check if File/Dir Exists
+  Pathname=%SYS%
+  Flags=10000100
+end
+item: Set Variable
+  Variable=SYS
+  Value=%WIN%
+end
+item: End Block
+end
+item: Set Variable
+  Variable=APPTITLE
+  Value=IFORMS 1.0
+  Flags=10000000
+end
+item: Set Variable
+  Variable=GROUP
+  Value=TSW Software\IFORMS
+  Flags=10000000
+end
+item: Set Variable
+  Variable=DISABLED
+  Value=!
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=TSW\IFORMS
+  Flags=10000000
+end
+item: Get Registry Key Value
+  Variable=NAME
+  Key=SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+  Default=name
+  Value Name=ComputerName
+  Flags=00000100
+end
+item: Remark
+  Text=TSW Specific Variables: see script for [Get Registration Information] dialog
+end
+item: Set Variable
+  Variable=TSWVERSION_KEY
+  Value=1000
+end
+item: Set Variable
+  Variable=TSWPRODUCT_KEY
+  Value=TSWDEMO
+end
+item: Set Variable
+  Variable=EXEFILENAME
+  Value=PayRoll.exe
+end
+item: Set Variable
+  Variable=SHCUTNAME
+  Value=IFORMS 1.0
+end
+item: Set Variable
+  Variable=TSWPRODUCTNAME
+  Value=IFORMS
+end
+item: Set Variable
+  Variable=LAST_NUM
+  Value=000
+end
+item: Set Variable
+  Variable=TSW_SN_OK
+  Value=F
+end
+item: Remark
+  Text=Assume NO Installation: IOPT == Z
+end
+item: Set Variable
+  Variable=IOPT
+  Value=T
+end
+item: Check Configuration
+  Flags=10111011
+end
+item: Get Registry Key Value
+  Variable=COMMON
+  Key=SOFTWARE\Microsoft\Windows\CurrentVersion
+  Default=C:\Program Files\Common Files
+  Value Name=CommonFilesDir
+  Flags=00000100
+end
+item: Get Registry Key Value
+  Variable=PROGRAM_FILES
+  Key=SOFTWARE\Microsoft\Windows\CurrentVersion
+  Default=C:\Program Files
+  Value Name=ProgramFilesDir
+  Flags=00000100
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=%PROGRAM_FILES%\%MAINDIR%
+  Flags=00001100
+end
+item: Set Variable
+  Variable=EXPLORER
+  Value=1
+end
+item: Else Statement
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=C:\%MAINDIR%
+  Flags=00001100
+end
+item: End Block
+end
+item: Set Variable
+  Variable=BACKUP
+  Value=%MAINDIR%\BACKUP
+  Flags=10000000
+end
+item: Set Variable
+  Variable=DOBACKUP
+  Value=A
+end
+item: Set Variable
+  Variable=COMPONENTS
+  Value=ABCDEFG
+  Flags=10000000
+end
+remarked item: Set Variable
+  Variable=INSTALL_DAO
+  Value=No
+end
+remarked item: Custom Graphic
+  Width=287
+  Height=37
+  item: Text
+    Text=You can choose not to install IFORMS 1.0 by clicking Cancel to exit Setup.
+    Rectangle=0 2 287 37
+    Pen Color=16777215
+    Pen Width=1
+    Extra Flags=00000001
+    Name=Arial
+    Font Style=-12 0 0 0 400 0 0 0 0 3 2 1 34
+  end
+end
+item: Wizard Block
+  Direction Variable=DIRECTION
+  Display Variable=DISPLAY
+  Bitmap Pathname=mainbk.bmp
+  X Position=1
+  Y Position=1
+  Filler Color=8404992
+  Flags=00000011
+end
+item: Custom Dialog Set
+  Name=Welcome
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Welcome
+    Title French=Bienvenue
+    Title German=Willkommen
+    Title Portuguese=Bem-vindo 
+    Title Spanish=Bienvenido
+    Title Italian=Benvenuto
+    Title Danish=Velkommen
+    Title Dutch=Welkom
+    Title Norwegian=Velkommen
+    Title Swedish=Välkommen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 197
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 197
+      Action=3
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=0 0 63 155
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Static
+      Rectangle=107 4 215 20
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=welcome.grf
+    end
+    item: Static
+      Rectangle=107 38 235 59
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=welcome2.grf
+    end
+    item: Static
+      Rectangle=107 62 235 88
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=welcome3.grf
+    end
+    item: Static
+      Rectangle=107 95 234 116
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=welcome4.grf
+    end
+    item: Static
+      Rectangle=107 120 235 156
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=welcome5.grf
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Select Destination Directory
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Choose Destination Location for %APPTITLE%
+    Title French=Choisissez la localisation de destination
+    Title German=Zielpfad wählen
+    Title Portuguese=Escolher Local de Destino
+    Title Spanish=Elegir una localización de destino
+    Title Italian=Scegli Posizione di Destinazione
+    Title Danish=Vælg destinationsmappe
+    Title Dutch=Kies doellocatie
+    Title Norwegian=Velg målplassering
+    Title Swedish=Välj ställe för installationen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=176 185 206 197
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=147 185 176 197
+      Variable=DIRECTION
+      Value=B
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000011
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=< Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=229 185 261 197
+      Action=3
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=0 0 81 190
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Static
+      Rectangle=86 60 223 74
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=dest1.grf
+    end
+    item: Static
+      Rectangle=86 144 250 167
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=dest2.grf
+    end
+    item: Static
+      Rectangle=86 97 251 123
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=dest1f.grf
+    end
+    item: Static
+      Rectangle=91 109 207 119
+      Destination Dialog=2
+      Create Flags=01010000000000000000000000000000
+      Text=%MAINDIR%
+      Text French=%MAINDIR%
+      Text German=%MAINDIR%
+      Text Portuguese=%MAINDIR%
+      Text Spanish=%MAINDIR%
+      Text Italian=%MAINDIR%
+      Text Danish=%MAINDIR%
+      Text Dutch=%MAINDIR%
+      Text Norwegian=%MAINDIR%
+      Text Swedish=%MAINDIR%
+    end
+    item: Push Button
+      Rectangle=208 108 237 119
+      Variable=MAINDIR_SAVE
+      Value=%MAINDIR%
+      Destination Dialog=1
+      Action=2
+      Enabled Color=00000000010000001111111100000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 400 0 0 0 0 3 2 1 34
+      Text=B&rowse...
+      Text French=P&arcourir
+      Text German=B&lättern...
+      Text Portuguese=P&rocurar
+      Text Spanish=V&isualizar...
+      Text Italian=Sfoglia...
+      Text Danish=&Gennemse...
+      Text Dutch=B&laderen...
+      Text Norwegian=Bla igjennom
+      Text Swedish=&Bläddra
+    end
+  end
+  item: Dialog
+    Title=Select Destination Directory
+    Title French=Choisissez le répertoire de destination
+    Title German=Zielverzeichnis wählen
+    Title Portuguese=Seleccionar Directório de Destino
+    Title Spanish=Seleccione el Directorio de Destino
+    Title Italian=Seleziona Directory di destinazione
+    Title Danish=Vælg Destinationsbibliotek
+    Title Dutch=Kies doeldirectory
+    Title Norwegian=Velg målkatalog
+    Title Swedish=Välj destinationskalatog
+    Width=221
+    Height=173
+    Font Name=Helv
+    Font Size=8
+    item: Listbox
+      Rectangle=5 2 160 149
+      Variable=MAINDIR
+      Create Flags=01010000100000010000000101000000
+      Flags=0000110000100010
+      Text=%MAINDIR%
+      Text French=%MAINDIR%
+      Text German=%MAINDIR%
+      Text Portuguese=%MAINDIR%
+      Text Spanish=%MAINDIR%
+      Text Italian=%MAINDIR%
+      Text Danish=%MAINDIR%
+      Text Dutch=%MAINDIR%
+      Text Norwegian=%MAINDIR%
+      Text Swedish=%MAINDIR%
+    end
+    item: Push Button
+      Rectangle=167 6 212 21
+      Create Flags=01010000000000010000000000000001
+      Text=OK
+      Text French=OK
+      Text German=OK
+      Text Portuguese=OK
+      Text Spanish=ACEPTAR
+      Text Italian=OK
+      Text Danish=OK
+      Text Dutch=OK
+      Text Norwegian=OK
+      Text Swedish=OK
+    end
+    item: Push Button
+      Rectangle=167 25 212 40
+      Variable=MAINDIR
+      Value=%MAINDIR_SAVE%
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen 
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Slet
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Backup Replaced Files
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Backup Replaced Files
+    Title French=Fichiers de Sauvegarde Remplacés
+    Title German=Sicherungskopie von ersetzten Dateien erstellen
+    Title Portuguese=Ficheiros substituídos de segurança
+    Title Spanish=Copias de seguridad de los archivos reemplazados
+    Title Italian=Backup file sostituiti
+    Title Danish=Sikkerhedskopiering af erstattede filer
+    Title Dutch=Vervangen bestanden kopiëren
+    Title Norwegian=Sikkerhetskopiere erstattede filer
+    Title Swedish=Säkerhetskopiera utbytta filer
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Control Name=BACK4
+      Rectangle=88 154 244 165
+      Destination Dialog=2
+      Create Flags=01010000000000000000000000000000
+      Text=%BACKUP%
+      Text French=%BACKUP%
+      Text German=%BACKUP%
+      Text Portuguese=%BACKUP%
+      Text Spanish=%BACKUP%
+      Text Italian=%BACKUP%
+      Text Danish=%BACKUP%
+      Text Dutch=%BACKUP%
+      Text Norwegian=%BACKUP%
+      Text Swedish=%BACKUP%
+    end
+    item: Static
+      Rectangle=0 0 81 190
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Static
+      Rectangle=83 49 258 110
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=backup11.grf
+    end
+    item: Static
+      Rectangle=83 116 247 136
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=backup21.grf
+    end
+    item: Static
+      Rectangle=83 142 248 168
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=backup1f.grf
+    end
+    item: Push Button
+      Rectangle=152 190 181 202
+      Variable=DIRECTION
+      Value=B
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000011
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=< Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=181 190 211 202
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=234 190 266 202
+      Action=3
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: If/While Statement
+      Variable=DLG_EVENT_TYPE
+      Value=INIT
+    end
+    item: Set Variable
+      Variable=DOBACKUP
+      Value=A
+    end
+    item: End Block
+    end
+    remarked item: If/While Statement
+      Variable=DOBACKUP
+      Value=B
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK3
+      Operation=1
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK4
+      Operation=1
+    end
+    remarked item: Set Control Text
+      Control Name=BT_YES
+      Control Text=(   ) Yes
+    end
+    remarked item: Set Control Text
+      Control Name=BT_NO
+      Control Text=( + ) No
+    end
+    remarked item: Else Statement
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK3
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK4
+    end
+    remarked item: Set Control Text
+      Control Name=BT_YES
+      Control Text=( + ) Yes
+    end
+    remarked item: Set Control Text
+      Control Name=BT_NO
+      Control Text=(   ) No
+    end
+    remarked item: End Block
+    end
+    remarked item: If/While Statement
+      Variable=DLG_EVENT_TYPE
+      Value=NoEvent
+    end
+    remarked item: Set Variable
+      Variable=DOBACKUP
+      Value=B
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK3
+      Operation=1
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK4
+      Operation=1
+    end
+    remarked item: Set Control Text
+      Control Name=BT_YES
+      Control Text=(   ) Yes
+    end
+    remarked item: Set Control Text
+      Control Name=BT_NO
+      Control Text=( + ) No
+    end
+    remarked item: End Block
+    end
+    remarked item: If/While Statement
+      Variable=DLG_EVENT_TYPE
+      Value=YesEvent
+    end
+    remarked item: Set Variable
+      Variable=DOBACKUP
+      Value=A
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK3
+    end
+    remarked item: Set Control Attribute
+      Control Name=BACK4
+    end
+    remarked item: Set Control Text
+      Control Name=BT_YES
+      Control Text=( + ) Yes
+    end
+    remarked item: Set Control Text
+      Control Name=BT_NO
+      Control Text=(   ) No
+    end
+    remarked item: End Block
+    end
+  end
+  item: Dialog
+    Title=Select Destination Directory
+    Title French=Choisissez le répertoire de destination
+    Title German=Zielverzeichnis wählen
+    Title Portuguese=Seleccionar Directório de Destino
+    Title Spanish=Seleccione el Directorio de Destino
+    Title Italian=Seleziona Directory di destinazione
+    Title Danish=Vælg Destinationsbibliotek
+    Title Dutch=Kies Doeldirectory
+    Title Norwegian=Velg målkatalog
+    Title Swedish=Välj destinationskalatog
+    Width=221
+    Height=173
+    Font Name=Helv
+    Font Size=8
+    item: Listbox
+      Rectangle=5 2 160 149
+      Variable=BACKUP
+      Create Flags=01010000100000010000000101000000
+      Flags=0000110000100010
+      Text=%BACKUP%
+      Text=
+      Text French=%BACKUP%
+      Text French=
+      Text German=%BACKUP%
+      Text German=
+      Text Portuguese=%BACKUP%
+      Text Portuguese=
+      Text Spanish=%BACKUP%
+      Text Spanish=
+      Text Italian=%BACKUP%
+      Text Italian=
+      Text Danish=%BACKUP%
+      Text Danish=
+      Text Dutch=%BACKUP%
+      Text Dutch=
+      Text Norwegian=%BACKUP%
+      Text Norwegian=
+      Text Swedish=%BACKUP%
+      Text Swedish=
+    end
+    item: Push Button
+      Rectangle=167 6 212 21
+      Create Flags=01010000000000010000000000000001
+      Text=OK
+      Text French=OK
+      Text German=OK
+      Text Portuguese=OK
+      Text Spanish=ACEPTAR
+      Text Italian=OK
+      Text Danish=OK
+      Text Dutch=OK
+      Text Norwegian=OK
+      Text Swedish=OK
+    end
+    item: Push Button
+      Rectangle=167 25 212 40
+      Variable=BACKUP
+      Value=%BACKUP_SAVE%
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen 
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Slet
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Select Program Group
+  Display Variable=DISPLAY
+  Flags=00000001
+  item: Dialog
+    Title=Select Program Group for %APPTITLE%
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Combobox
+      Rectangle=81 57 259 172
+      Variable=GROUP
+      Create Flags=01010000001000010000001101000001
+      Flags=0000000000000001
+      Text=%GROUP%
+      Text=
+      Text French=%3%
+      Text German=%3%
+      Text Portuguese=%3%
+      Text Spanish=%3%
+      Text Italian=%3%
+      Text Danish=%3%
+      Text Dutch=%3%
+      Text Norwegian=%3%
+      Text Swedish=%3%
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=0 0 81 190
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Push Button
+      Rectangle=152 190 181 202
+      Variable=DIRECTION
+      Value=B
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000011
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=< Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=181 190 211 202
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=234 190 266 202
+      Action=3
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=81 41 265 56
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=group1.grf
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Start Installation
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Start Installation - %APPTITLE%
+    Title French=Commencer l'installation
+    Title German=Installation beginnen
+    Title Portuguese=Iniciar Instalação
+    Title Spanish=Comenzar la Instalación
+    Title Italian=Avvia Installazione
+    Title Danish=Start installationen
+    Title Dutch=Start de installatie
+    Title Norwegian=Start installeringen
+    Title Swedish=Starta installationen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=0 0 81 190
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Static
+      Rectangle=88 52 262 85
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=startinst1.grf
+    end
+    item: Push Button
+      Rectangle=152 190 181 202
+      Variable=DIRECTION
+      Value=B
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000011
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=< Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=181 190 211 202
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=234 190 266 202
+      Action=3
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=88 89 262 114
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=startinst2.grf
+    end
+    item: Checkbox
+      Rectangle=89 116 249 130
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000010000000000000011
+      Text=Set Icon on Desktop ?
+      Text=
+    end
+  end
+end
+item: If/While Statement
+  Variable=DISPLAY
+  Value=Select Destination Directory
+end
+item: Set Variable
+  Variable=BACKUP
+  Value=%MAINDIR%\BACKUP
+end
+item: End Block
+end
+item: If/While Statement
+  Variable=DISPLAY
+  Value=Get Registration Information
+end
+item: Remark
+  Text=Install DEMO
+end
+item: Set Variable
+  Variable=TSWPRODUCT_KEY
+  Value=IFORMS
+end
+item: Set Variable
+  Variable=DIRECTION
+  Value=N
+end
+item: Remark
+  Text=Install UnSat Plus (HELP, VS2DT, VLEACH, PESTAN)
+end
+item: If/While Statement
+  Variable=TSWPRODUCT_KEY
+  Value=IFORMS
+end
+item: Set Variable
+  Variable=APPTITLE
+  Value=IFORMS 1.0
+  Flags=10000000
+end
+item: Set Variable
+  Variable=IOPT
+  Value=A
+end
+item: Set Variable
+  Variable=DIRECTION
+  Value=N
+end
+item: Set Variable
+  Variable=APPTITLE
+  Value=IFORMS 1.0
+  Flags=10000000
+end
+item: Set Variable
+  Variable=TSWPRODUCTNAME
+  Value=IFORMS 1.0
+end
+item: Edit Registry
+  Total Keys=3
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%COMPANY%
+    Value Name=Company
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%TSW_USER_SN%
+    New Value=
+    Value Name=License
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%NAME%
+    Value Name=Name
+    Root=2
+  end
+end
+item: Edit Registry
+  Total Keys=3
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%COMPANY%
+    Value Name=Company
+    Root=1
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%NAME%
+    Value Name=Name
+    Root=1
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\REGISTRATION
+    New Value=%TSW_USER_SN%
+    Value Name=License
+    Root=1
+  end
+end
+item: End Block
+end
+item: End Block
+end
+item: If/While Statement
+  Variable=DOBACKUP
+  Value=A
+end
+item: Set Variable
+  Variable=BACKUPDIR
+  Value=%BACKUP%
+end
+item: End Block
+end
+item: End Block
+end
+item: Open/Close INSTALL.LOG
+end
+item: Check Disk Space
+  Component=COMPONENTS
+end
+item: Check Configuration
+  Flags=10111011
+end
+item: Get Registry Key Value
+  Variable=MSOFT_COMMON
+  Key=SOFTWARE\Microsoft\Shared Tools
+  Default=C:\Program Files\Common Files\Microsoft Shared\
+  Value Name=SharedFilesDir
+  Flags=00000100
+end
+item: End Block
+end
+item: Remark
+  Text=include uninstall feature / option
+end
+item: Include Script
+  Pathname=%_WISE_%\INCLUDE\uninstal.wse
+end
+item: Remark
+  Text=Maps
+end
+item: Install File
+  Source=D:\PROJECTs\Fpayroll\PayRoll.exe
+  Destination=%MAINDIR%\PayRoll.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=D:\PROJECTs\Fpayroll\IFORM.HLP
+  Destination=%MAINDIR%\IFORM.HLP
+  Flags=0000000010000010
+end
+item: Install File
+  Source=D:\PROJECTs\Fpayroll\ibm.xml
+  Destination=%MAINDIR%\ibm.xml
+  Flags=0000000010000010
+end
+item: Install File
+  Source=D:\Projects\Fpayroll\forms.xml
+  Destination=%MAINDIR%\forms.xml
+  Flags=0000000010000010
+end
+item: Install File
+  Source=D:\Projects\Fpayroll\Template.mdb
+  Destination=%MAINDIR%\Template.mdb
+  Flags=0000000010000010
+end
+item: Remark
+  Text=Install main exeutable file - see below
+end
+item: Remark
+  Text=Install Tutorials : create registry entries for data bases
+end
+item: Edit Registry
+  Total Keys=5
+  item: Key
+    Key=Software
+    Root=1
+  end
+  item: Key
+    Key=Software\TSW
+    Root=1
+  end
+  item: Key
+    Key=Software\TSW\TSW Data
+    Root=1
+  end
+  item: Key
+    Key=Software\TSW\TSW Data\%TSWVERSION_KEY%
+    Root=1
+  end
+  item: Key
+    Key=Software\TSW\TSW Data\%TSWVERSION_KEY%\Default
+    Root=1
+  end
+end
+item: Remark
+  Text=install UnSat Suite / Visual HELP files
+end
+item: Install File
+  Source=c:\Program Files\Wise\Unwise32.exe
+  Destination=%MAINDIR%\Unwise32.exe
+  Flags=0000000010000010
+end
+item: Set Variable
+  Variable=COMMON
+  Value=%COMMON%
+  Flags=00010100
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=%MAINDIR%
+  Flags=00010100
+end
+item: Check Configuration
+  Flags=10111011
+end
+item: Get Registry Key Value
+  Variable=STARTUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%WIN%\Start Menu\Programs\StartUp
+  Value Name=StartUp
+  Flags=00000010
+end
+item: Get Registry Key Value
+  Variable=DESKTOPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%WIN%\Desktop
+  Value Name=Desktop
+  Flags=00000010
+end
+item: Get Registry Key Value
+  Variable=STARTMENUDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%WIN%\Start Menu
+  Value Name=Start Menu
+  Flags=00000010
+end
+item: Get Registry Key Value
+  Variable=GROUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%WIN%\Start Menu\Programs
+  Value Name=Programs
+  Flags=00000010
+end
+item: Get Registry Key Value
+  Variable=CSTARTUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%STARTUPDIR%
+  Value Name=Common Startup
+  Flags=00000100
+end
+item: Get Registry Key Value
+  Variable=CDESKTOPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%DESKTOPDIR%
+  Value Name=Common Desktop
+  Flags=00000100
+end
+item: Get Registry Key Value
+  Variable=CSTARTMENUDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%STARTMENUDIR%
+  Value Name=Common Start Menu
+  Flags=00000100
+end
+item: Get Registry Key Value
+  Variable=CGROUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%GROUPDIR%
+  Value Name=Common Programs
+  Flags=00000100
+end
+item: Set Variable
+  Variable=CGROUP_SAVE
+  Value=%GROUP%
+end
+item: Set Variable
+  Variable=GROUP
+  Value=%GROUPDIR%\%GROUP%
+end
+remarked item: Set Variable
+  Variable=SHCUTNAME
+  Value=%TSWPRODUCTNAME% %TSWVERSION_KEY%
+end
+item: Create Shortcut
+  Source=%MAINDIR%\%EXEFILENAME%
+  Destination=%DESKTOPDIR%\%SHCUTNAME%.lnk
+  Working Directory=%MAINDIR%
+  Icon Number=0
+  Key Type=1536
+  Flags=00000001
+end
+item: Create Shortcut
+  Source=%MAINDIR%\%EXEFILENAME%
+  Destination=%GROUP%\%SHCUTNAME%.lnk
+  Working Directory=%MAINDIR%
+  Icon Number=0
+  Key Type=1536
+  Flags=00000001
+end
+item: Create Shortcut
+  Source=%MAINDIR%\Unwise32.exe
+  Destination=%GROUP%\Uninstall %SHCUTNAME%.lnk
+  Working Directory=%MAINDIR%
+  Icon Number=0
+  Key Type=1536
+  Flags=00000001
+end
+item: Else Statement
+end
+item: Create Shortcut
+  Source=%MAINDIR%\%EXEFILENAME%
+  Destination=%DESKTOPDIR%\%SHCUTNAME%.lnk
+  Working Directory=%MAINDIR%
+  Icon Number=0
+  Key Type=1536
+  Flags=00000001
+end
+item: Add ProgMan Icon
+  Group=%GROUP%
+  Icon Name=%SHCUTNAME%
+  Command Line=%MAINDIR%\%EXEFILENAME%
+  Default Directory=%MAINDIR%
+  Flags=01000000
+end
+item: Add ProgMan Icon
+  Group=%GROUP%
+  Icon Name=Uninstall %SHCUTNAME%
+  Command Line=%MAINDIR%\Unwise32.exe
+  Default Directory=%MAINDIR%
+  Flags=01000000
+end
+item: End Block
+end
+remarked item: Edit Registry
+  Total Keys=1
+  Key=SOFTWARE\TSW System Provider\IFORMS\1.0
+  New Value=%MAINDIR%\%EXEFILENAME%
+  New Value=
+  Value Name=EXEPATH
+  Root=2
+end
+item: Edit Registry
+  Total Keys=5
+  item: Key
+    Key=SOFTWARE\TSW System Provider
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\Registration
+    Root=2
+  end
+  item: Key
+    Key=SOFTWARE\TSW System Provider\%TSWPRODUCTNAME%\%TSWVERSION_KEY%\Registration
+    New Value=%MAINDIR%\%EXEFILENAME%
+    Value Name=EXEPATH
+    Root=2
+  end
+end
+item: Self-Register OCXs/DLLs
+  Description=Updating System Configuration, Please Wait...
+end
+item: Wizard Block
+  Direction Variable=DIRECTION
+  Display Variable=DISPLAY
+  Bitmap Pathname=mainbk.bmp
+  X Position=1
+  Y Position=1
+  Filler Color=8404992
+  Flags=00000011
+end
+item: Custom Dialog Set
+  Name=Finished
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Installation Complete
+    Title French=Installation en cours
+    Title German=Installation abgeschlossen
+    Title Portuguese=Instalação Completa 
+    Title Spanish=Se ha completado la Instalación
+    Title Italian=Installazione completata
+    Title Danish=Installation gennemført
+    Title Dutch=Installatie afgerond
+    Title Norwegian=Installasjonen er fullført
+    Title Swedish=Installationen klar
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=219 185 261 197
+      Variable=DIRECTION
+      Value=N
+      Enabled Color=00000000111111111111111110000000
+      Disabled Color=00000000111111111111111111111111
+      Create Flags=01010000000000010000000000000001
+      Flags=0000000000000010
+      Name=Arial
+      Font Style=-13 0 0 0 700 0 0 0 0 3 2 1 34
+      Text=Finish
+      Text French=&Terminer>
+      Text German=&Fertigstellen>
+      Text Portuguese=&Terminar >
+      Text Spanish=&Finalizar>
+      Text Italian=&Fine >
+      Text Danish=&Afslut >
+      Text Dutch=&Klaar>
+      Text Norwegian=&Avslutt>
+      Text Swedish=&Sluta>
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=96 44 224 62
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=finish1.grf
+    end
+    item: Static
+      Rectangle=96 158 217 169
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=finish2.grf
+    end
+    item: Static
+      Rectangle=0 0 63 155
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=inst_main.grf
+    end
+    item: Static
+      Rectangle=96 90 224 108
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=finish3.grf
+    end
+  end
+end
+item: End Block
+end
+item: New Event
+  Name=Cancel
+end
+item: Include Script
+  Pathname=%_WISE_%\INCLUDE\rollback.wse
+end

@@ -1,0 +1,53 @@
+
+[OPTIONS]
+ERRORLOG=iform.ERR
+COMPRESS=0x4
+LCID=0x0409 0x0 0x0
+FTS=0x1d
+CONTENTS=Contents
+TITLE=IForms
+COPYRIGHT=Copyright ©TSW System Provider
+CNT=IFORM.CNT
+[WINDOWS]
+main=,,,,,0
+
+[FILES]
+iform.RTF
+
+[MAP]
+#define Window_Menu	23
+#define What_would_you_like_to_start_doing_	2
+#define What_is_the_TSW_Form_	3
+#define Tool_Bar_Icons	10
+#define Set	35
+#define Send_Mail	14
+#define Save_As	15
+#define Reports	19
+#define RC_1E	32
+#define RC_107E	31
+#define Profiles	4
+#define PR_0336	30
+#define Personal_Profiles	9
+#define Personal_Forms	33
+#define Payments	20
+#define Options_Menu	16
+#define Open_and_fill_a_new_form_	1
+#define Open___Open_a_saved_form	12
+#define NAS_2120	34
+#define Legal_Notice	6
+#define INS_2106E	29
+#define How_to_Obtain_Updates	5
+#define Help_Menu	18
+#define GST_62_1	28
+#define Getting_Started	7
+#define Form_Menu	13
+#define Employee_Database	17
+#define Edit_Menu	22
+#define Contents	0
+#define Collection	24
+#define CBR_190	27
+#define Business_Profiles	8
+#define Business_Forms	26
+#define Addresses	21
+#define _Payroll	11
+#define 11076	25

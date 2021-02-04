@@ -1,0 +1,15 @@
+Document Type: GRF
+item: Custom Graphic
+  Width=341
+  Height=41
+  item: Text
+    Text=Welcome to TSW Form Setup program.
+    Text=This program will install  IFORMS 1.0 on your computer.
+    Rectangle=1 0 341 41
+    Pen Color=16777215
+    Pen Width=1
+    Extra Flags=00000001
+    Name=Arial
+    Font Style=-12 0 0 0 400 0 0 0 0 3 2 1 34
+  end
+end

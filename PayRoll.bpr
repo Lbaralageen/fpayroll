@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="PayRoll.exe"/>
+    <OBJFILES value="PayRoll.obj TMain.obj TMidi.obj About.obj Staff.obj XMLclass.obj 
+      TPayment.obj TTaxProp.obj TFNew.obj F11076.obj FormListCall.obj 
+      TFrameDB.obj ParseString.obj TProfile.obj TFOpen.obj TEmpl.obj TFormDB.obj 
+      VBaseStaff.obj FGST34a.obj TFormEdit.obj IPerson.obj FNAS2120B.obj 
+      Screen.obj Fprint.obj FMidiDB.obj FMidProc.obj FMidiEvent.obj TFEmail.obj"/>
+    <RESFILES value="PayRoll.res wmf.RES"/>
+    <IDLFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) TMain.dfm TMidi.dfm About.dfm TPayment.dfm TTaxProp.dfm 
+      TFNew.dfm F11076.dfm TFrameDB.dfm TProfile.dfm TFOpen.dfm TEmpl.dfm 
+      TFormDB.dfm FGST34a.dfm TFormEdit.dfm FNAS2120B.dfm Screen.dfm TFEmail.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="O307_R51.lib O306_R51.lib TSGC5201.lib vclado50.lib About.lib VCLDB50.lib 
+      VCLX50.lib WPTools3.lib XML_DOM.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib XML_DOM.lib WPTools3.lib VCLX50.lib VCLDB50.lib About.lib 
+      vclado50.lib TSGC5201.lib O306_R51.lib O307_R51.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi vclado50.bpi WPTools3.bpi XML_DOM.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="PayRoll.cpp"/>
+    <INCLUDEPATH value="D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;&quot;P:\b5\TopGrid 2.01 CBuilder5\Lib\&quot;;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;&quot;P:\b5\WPTools3\BCB5\&quot;"/>
+    <LIBPATH value="D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;&quot;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib&quot;;&quot;P:\b5\TopGrid 2.01 CBuilder5\Lib\&quot;;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;&quot;P:\b5\WPTools3\BCB5\&quot;"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffixcpp -I$(BCB)\include -I$(BCB)\include\vcl"/>
+    <CFLAG1 value="-Od -H=d:\temp\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- -c 
+      -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -v -JPHNV -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w0 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[HistoryLists\hlIncludePath]
+Count=17
+Item0=D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\b5\WPTools3\BCB5
+Item1=D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item2=D:\Borland\CBuilder5\Source\Vcl;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item3=P:\b5\Orpheus3;P:\B5\TopGrid\Source\;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item4=P:\B5\TopGrid\Source\;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item5=P:\B5\TopGrid\Source;P:\b5\TopGrid 2.01 CBuilder5\Lib;D:\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item6=D:\Borland\CBuilder5\Bin;$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item7=$(BCB)\include;$(BCB)\include\vcl;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item8=..\;..;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item9=..\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item10=P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item11=P:\b5\Orpheus3;P:\B5\TopGrid\Source;$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item12=$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5 
+Item13=$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\
+Item14=$(BCB)\include;$(BCB)\include\vcl;D:\Borland\CBuilder5\Bin;P:\B5\CueSoft;P:\B5\IGraph 
+Item15=;D:\Borland\CBuilder5\Bin;P:\B5\CueSoft;D:\Borland\CBuilder5\Examples\Doc\OleCtnrs;$(BCB)\include;$(BCB)\include\vcl
+Item16=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=17
+Item0=D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\b5\WPTools3\BCB5
+Item1=D:\Borland\CBuilder5\Source\Vcl\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item2=D:\Borland\CBuilder5\Source\Vcl;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item3=P:\b5\Orpheus3;P:\B5\TopGrid\Source\;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item4=P:\B5\TopGrid\Source\;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib\;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item5=P:\B5\TopGrid\Source;\\Alta\Components\b5\TopGrid 2.01 CBuilder5\Lib;P:\b5\TopGrid 2.01 CBuilder5\Lib;D:\Borland\CBuilder5\Bin\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item6=D:\Borland\CBuilder5\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item7=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;P:\B5\CueSoft\;P:\B5\WPTools\BCB5\
+Item8=..\;..;d:\borland\cbuilder5\lib\release\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item9=..\;d:\borland\cbuilder5\lib\release\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item10=d:\borland\cbuilder5\lib\release\;P:\b5\Orpheus3\;P:\B5\TopGrid\Source\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item11=d:\borland\cbuilder5\lib\release;P:\b5\Orpheus3;P:\B5\TopGrid\Source;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5\
+Item12=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\;P:\B5\WPTools\BCB5 
+Item13=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin\;P:\B5\CueSoft\;P:\B5\IGraph\
+Item14=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder5\Bin;P:\B5\CueSoft;P:\B5\IGraph 
+Item15=;D:\Borland\CBuilder5\Bin;P:\B5\CueSoft;D:\Borland\CBuilder5\Examples\Doc\OleCtnrs;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item16=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

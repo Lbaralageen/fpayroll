@@ -1,0 +1,15 @@
+Document Type: GRF
+item: Custom Graphic
+  Width=305
+  Height=54
+  item: Text
+    Text=You are now ready to install your TSW software product. Press the <Next> button to begin the installation or the Back button to reenter the installation information.
+    Rectangle=0 1 305 54
+    Flags=01110010
+    Pen Color=16777215
+    Pen Width=1
+    Extra Flags=00000001
+    Name=Arial
+    Font Style=-12 0 0 0 400 0 0 0 0 3 2 1 34
+  end
+end

@@ -1,0 +1,45 @@
+:Base TSWFORM.hlp
+:Title 
+1 What is the TSW Form?=Hlp_What_is
+1 How to Obtain the Update.=Hlp_How_to
+1 Legal notes=Hlp_Legal
+1 Reference
+2 Getting Started=Hlp_Getting_Started
+2 Tool Bar Icons=Hlp_Tool_Bar
+2 Menu items
+3 Forms Menu Items
+4 Form Menu=Hlp_Form_Menu
+4 Save As=Hlp_Save_As
+4 Open New=Hlp_Open_New
+4 Open Saved=Hlp_Open_Saved
+2 Edit Menu=Hlp_Edit_Menu
+2 Payroll Menu=Hlp_Payroll_Menu
+2 Options=Hlp_Options_Menu
+2 Window Menu=Hlp_Window_Menu
+2 Help Menu=Hlp_Help_Menu
+1 Forms
+2 Collection=Hlp_Collection
+2 Business Forms
+3 CBR 190, Articles of Incorporation=Hlp_CBR_190
+3 GST 62-1, Good and Service Tax Return=Hlp_GST_62x1
+3 INS 2106, Record of Employment=Hlp_INS_x2106x01x98E
+3 PR 0336, Retail Sales Tax Return=Hlp_PR_0336
+3 RC 107E, Current Source Deductions Remittance Voucher=Hlp_RC_107E
+3 RC 1E, Request for Business Number (BN)=Hlp_RC_1E
+2 Personal Forms
+3 11076, Request for Birth, Marriage, or Death certificate=Hlp_11076
+3 INS 5114, Application for Unemployment Benefits=Hlp_INS_5114
+3 INS 5140, Medical Certificate, Employment Insurance Program=Hlp_INS_5140
+3 INS 5168, Sickness, Maternity or Parental Benefits, Annex 3=Hlp_INS_5168
+3 NAS 2120, Application for Social Insurance Number=Hlp_NAS_2120
+3 TD 1E, Personal Tax Credits=Hlp_TD_1E
+1 Payroll
+2 Payroll=Hlp_Payroll
+2 Employee Database=Hlp_Employee_Database
+2 Payments=Hlp_Payments
+2 Reports=Hlp_Reports
+1 Profiles
+2 Profiles=Hlp_Profiles
+2 Business Profiles=Hlp_Business_Profiles
+2 Personal Profiles=Hlp_Personal_Profiles
+2 Set=Hlp_Set

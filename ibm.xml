@@ -1,0 +1,132 @@
+<root Version="1.0" Author="K.Chumak" Database="Provider=Microsoft.Jet.OLEDB.4.0;Password=&#34;&#34;;Data Source=C:\Users\Administrator\Documents\sws.mdb">&#169; 2001 TSW System Provider http://www.ibm.net<Database>
+    <Item Name="Remote">
+      <Table Short_Name="Employee" Name="Employee">
+        <Field Short_Name="ID" SQL="INT" Index="Yes"/>
+        <Field Short_Name="FirstName" SQL="VARCHAR(56)"/>
+        <Field Short_Name="LastName" SQL="VARCHAR(56)"/>
+        <Field Short_Name="SIN" SQL="LONG"/>
+        <Field Short_Name="Hired" SQL="LONG"/>
+        <Field Short_Name="Title" SQL="VARCHAR(24)"/>
+        <Field Short_Name="typeJob" SQL="BIT"/>
+        <Field Short_Name="Street" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Province" SQL="VARCHAR(24)"/>
+        <Field Short_Name="City" SQL="VARCHAR(24)"/>
+        <Field Short_Name="PostBox" SQL="VARCHAR(8)"/>
+        <Field Short_Name="Nmb" SQL="VARCHAR(12)"/>
+        <Field Short_Name="Salary" SQL="BIT"/>
+        <Field Short_Name="Prd" SQL="LONG"/>
+        <Field Short_Name="Hr" SQL="FLOAT"/>
+        <Field Short_Name="EiIns" SQL="FLOAT"/>
+        <Field Short_Name="EiNon" SQL="FLOAT"/>
+        <Field Short_Name="RPP" SQL="FLOAT"/>
+        <Field Short_Name="Unn" SQL="FLOAT"/>
+        <Field Short_Name="Alimony" SQL="FLOAT"/>
+        <Field Short_Name="Federal" SQL="FLOAT"/>
+        <Field Short_Name="Provincial" SQL="FLOAT"/>
+        <Field Short_Name="TaxCredit" SQL="FLOAT"/>
+        <Field Short_Name="AddTax" SQL="FLOAT"/>
+        <Field Short_Name="ComboCode" SQL="VARCHAR(12)"/>
+        <Field Short_Name="Dpnd" SQL="INT"/>
+        <Field Short_Name="Annual" SQL="FLOAT"/>
+      </Table>
+      <Table Name="Company" Short_Name="Company">
+        <Field Short_Name="ID" SQL="INT" Index="Yes"/>
+        <Field Short_Name="Name" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Trade" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Certificate" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Stateman" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Saleman" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Phone" SQL="VARCHAR(24)"/>
+        <Field Short_Name="FirstName" SQL="VARCHAR(56)"/>
+        <Field Short_Name="LastName" SQL="VARCHAR(56)"/>
+        <Field Short_Name="PhonePerson" SQL="VARCHAR(24)"/>
+        <Field Short_Name="StreetMail" SQL="VARCHAR(64)"/>
+        <Field Short_Name="CityMail" SQL="VARCHAR(64)"/>
+        <Field Short_Name="ProvinceMail" SQL="VARCHAR(16)"/>
+        <Field Short_Name="CountyMail" SQL="VARCHAR(16)"/>
+        <Field Short_Name="IndexMail" SQL="VARCHAR(16)"/>
+        <Field Short_Name="PhoneMail" SQL="VARCHAR(16)"/>
+        <Field Short_Name="FaxMail" SQL="VARCHAR(16)"/>
+        <Field Short_Name="StreetBus" SQL="VARCHAR(56)"/>
+        <Field Short_Name="CityBus" SQL="VARCHAR(56)"/>
+        <Field Short_Name="ProvinceBus" SQL="VARCHAR(16)"/>
+        <Field Short_Name="CountyBus" SQL="VARCHAR(16)"/>
+        <Field Short_Name="IndexBus" SQL="VARCHAR(16)"/>
+        <Field Short_Name="PhoneBus" SQL="VARCHAR(16)"/>
+        <Field Short_Name="FaxBus" SQL="VARCHAR(16)"/>
+        <Field Short_Name="Federal" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Provincial" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Payroll" SQL="FLOAT"/>
+        <Field Short_Name="GST" SQL="FLOAT"/>
+        <Field Short_Name="PST" SQL="FLOAT"/>
+        <Field Short_Name="Health" SQL="FLOAT"/>
+        <Field Short_Name="Cfty" SQL="FLOAT"/>
+        <Field Short_Name="StartPeriod" SQL="LONG"/>
+        <Field Short_Name="IndexPeriod" SQL="INT"/>
+      </Table>
+      <Table Short_Name="Mail" Name="Mailing">
+        <Field Short_Name="ID" SQL="INT" Index="Yes"/>
+        <Field Short_Name="Street" SQL="VARCHAR(64)"/>
+        <Field Short_Name="City" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Province" SQL="INT"/>
+        <Field Short_Name="Place" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Box" SQL="VARCHAR(14)"/>
+        <Field Short_Name="Home" SQL="VARCHAR(14)"/>
+        <Field Short_Name="Fax" SQL="VARCHAR(14)"/>
+        <Field Short_Name="Job" SQL="VARCHAR(14)"/>
+      </Table>
+      <Table Short_Name="Person" Name="Person">
+        <Field Short_Name="ID" SQL="INT" Index="Yes"/>
+        <Field Short_Name="Name" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Middle" SQL="VARCHAR(64)"/>
+        <Field Short_Name="Last_Name" SQL="VARCHAR(64)"/>
+        <Field Short_Name="SIN" SQL="VARCHAR(16)"/>
+        <Field Short_Name="Sex" SQL="INT"/>
+        <Field Short_Name="BirthDay" SQL="INT"/>
+        <Field Short_Name="BirthMonth" SQL="INT"/>
+        <Field Short_Name="BirthYear" SQL="INT"/>
+        <Field Short_Name="Street" SQL="VARCHAR(56)"/>
+        <Field Short_Name="City" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Province" SQL="VARCHAR(56)"/>
+        <Field Short_Name="County" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Post_Box" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Phone_Home" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Fax" SQL="VARCHAR(56)"/>
+        <Field Short_Name="Phone_Work" SQL="VARCHAR(56)"/>
+      </Table>
+      <Table Short_Name="Payment" Name="Payment">
+        <Field Short_Name="ID" SQL="INT" Index="Yes"/>
+        <Field Short_Name="Employee" SQL="INT"/>
+      </Table>
+    </Item>
+  </Database><Code>
+    <Item Name="0"/>
+    <Item Name="2"/>
+    <Item Name="3"/>
+    <Item Name="4"/>
+    <Item Name="5"/>
+    <Item Name="6"/>
+    <Item Name="7"/>
+    <Item Name="8"/>
+    <Item Name="9"/>
+    <Item Name="10"/>
+    <Item Name="E"/>
+    <Item Name="X"/>
+  </Code><Province>
+    <Item Name="Ontario" Short_Name="ON"/>
+    <Item Name="Alberta" Short_Name="AL"/>
+    <Item Name="Quebec" Short_Name="QE"/>
+    <Item Name="Nova Scotia" Short_Name="NS"/>
+    <Item Name="New Brunswick" Short_Name="NB"/>
+    <Item Name="Manitoba" Short_Name="MA"/>
+    <Item Name="British Columbia" Short_Name="BC"/>
+    <Item Name="Prince Edward Island" Short_Name="PE"/>
+    <Item Name="Saskatchewan" Short_Name="SK"/>
+    <Item Name="Newfoundland" Short_Name="NF"/>
+    <Item Name="Northwest Territories" Short_Name="MT"/>
+    <Item Name="Yukon Territory" Short_Name="YT"/>
+    <Item Name="Nunavut" Short_Name="NV"/>
+  </Province><Titul>
+    <Item Name="secretary" ID="0"/>
+    <Item Name="operator" ID="1"/>
+  </Titul></root>

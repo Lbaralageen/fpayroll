@@ -1,0 +1,29 @@
+Document Type: GRF
+item: Custom Graphic
+  Width=141
+  Height=309
+  item: Bitmap
+    Text=logo.bmp
+    Rectangle=5 8 37 40
+    Pen Width=1
+    Brush Style=1000
+  end
+  item: Text
+    Text=TSW System 
+    Text=Providers
+    Rectangle=42 3 151 44
+    Flags=00011010
+    Pen Color=8388608
+    Pen Width=1
+    Name=Times New Roman
+    Font Style=-15 0 0 0 700 0 0 0 0 3 2 1 18
+  end
+  item: Bitmap
+    Text=inst_t256.bmp
+    Rectangle=0 47 122 309
+    Pen Color=255
+    Pen Width=1
+    Brush Style=1000
+    Extra Flags=00000001
+  end
+end

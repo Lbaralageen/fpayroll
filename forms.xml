@@ -1,0 +1,332 @@
+<root>
+  <Project Name="project IBM">
+    <Group Name="GST 34E" ID="104" Short_Name="GST34E" Description="GOODS AND SERVICES TAX" Type="Tax">
+      <Item Name="Page 1" File="gst34a.wmf" ID="104" Short_Name="Page_1" Profile="Person" SID="1" Color="0xdcD9e0">
+        <Field Name="EditBN" Type="INT" Left="54" Top="210" Height="22" Right="449" Length="16"/>
+        <Field Name="EditName" Type="STRING" Left="460" Top="210" Height="22" Right="1023" Length="40" ID="17453036"/>
+        <Field Name="EditFrom" Type="DATE" Left="105" Top="270" Height="22" Right="250" Length="10" SQL="LONG"/>
+        <Field Name="EditTo" Type="DATE" Left="285" Top="270" Height="22" Right="450" Length="10" SQL="LONG"/>
+        <Field Name="EditDate" Type="DATE" Left="460" Top="270" Height="22" Right="650" Length="10" Database="No"/>
+        <Field Name="Edit101" Type="MONEY" Left="970" Top="472" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit101A" Type="INT" Left="1110" Top="472" Height="22" Right="1144" Length="2" Database="No"/>
+        <Field Name="Edit103" Type="MONEY" Left="970" Top="555" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit103A" Type="INT" Left="1110" Top="555" Height="22" Right="1144" Length="2" Database="No"/>
+        <Field Name="Edit104" Type="MONEY" Left="970" Top="601" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit104A" Type="INT" Left="1110" Top="601" Height="22" Right="1144" Length="2" Database="No"/>
+        <Field Name="Edit105" Type="INT" Left="1283" Top="657" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No" Jump=".,"/>
+        <Field Name="Edit105A" Type="INT" Left="1425" Top="657" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit106" Type="MONEY" Left="970" Top="694" Height="22" Right="1105" Length="9" ID="195222344" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit106A" Type="INT" Left="1110" Top="694" Height="22" Right="1144" Length="2" ID="197733548" Database="No"/>
+        <Field Name="Edit107" Type="MONEY" Left="970" Top="739" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit107A" Type="INT" Left="1110" Top="739" Height="22" Right="1144" Length="2" Database="No"/>
+        <Field Name="Edit108" Type="INT" Left="1283" Top="788" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No" Jump=".,"/>
+        <Field Name="Edit108A" Type="INT" Left="1425" Top="788" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit109Z" Type="INT" Left="1160" Top="828" Height="22" Right="1190" Length="1" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit109" Type="INT" Left="1283" Top="828" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No" ID="196553812" Jump=".,"/>
+        <Field Name="Edit109A" Type="INT" Left="1425" Top="828" Height="22" Right="1452" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit110" Type="MONEY" Left="970" Top="895" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit110A" Type="INT" Left="1110" Top="895" Height="22" Right="1144" Length="2" Database="No"/>
+        <Field Name="Edit111" Type="MONEY" Left="970" Top="944" Height="22" Right="1105" Length="9" ID="195666228" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit111A" Type="INT" Left="1110" Top="944" Height="22" Right="1144" Length="2" ID="198176216" Database="No"/>
+        <Field Name="Edit112" Type="INT" Left="1283" Top="982" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No" Jump=".,"/>
+        <Field Name="Edit112A" Type="INT" Left="1425" Top="982" Height="22" Right="1452" Length="9" ReadOnly="Yes" Database="No" Jump=".,"/>
+        <Field Name="Edit113AZ" Type="INT" Left="1160" Top="1026" Height="22" Right="1190" Length="1" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit113A" Type="INT" Left="1282" Top="1026" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No" Jump=".,"/>
+        <Field Name="Edit113AA" Type="INT" Left="1425" Top="1026" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit205" Type="MONEY" Left="970" Top="1094" Height="22" Right="1105" Length="9" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit205A" Type="INT" Left="1110" Top="1094" Height="22" Right="1144" Length="2" ID="198324028" Database="No"/>
+        <Field Name="Edit405" Type="MONEY" Left="970" Top="1140" Height="22" Right="1105" Length="9" ID="195963180" Jump=".," SQL="FLOAT"/>
+        <Field Name="Edit405A" Type="INT" Left="1110" Top="1140" Height="22" Right="1144" Length="2" ID="198471376" Database="No"/>
+        <Field Name="Edit113B" Type="INT" Left="1285" Top="1186" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit113BA" Type="INT" Left="1425" Top="1186" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit113CZ" Type="INT" Left="1160" Top="1231" Height="22" Right="1190" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit113C" Type="INT" Left="1285" Top="1231" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit113CA" Type="INT" Left="1425" Top="1231" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit114" Type="INT" Left="970" Top="1322" Height="22" Right="1144" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit115" Type="INT" Left="1285" Top="1323" Height="22" Right="1416" Length="9" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit115A" Type="INT" Left="1425" Top="1323" Height="22" Right="1452" Length="2" ReadOnly="Yes" Database="No"/>
+      </Item>
+      <Item Name="Page 2" File="gst34a.wmf" ID="105" Usage="No" SID="2" Visible="ReadOnly" Color="0xF7F0F3">
+        <Field Name="Edit101_1" Type="Text" Left="215" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="200386424"/>
+        <Field Name="Edit101_2" Type="Text" Left="260" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="200533268"/>
+        <Field Name="Edit101_3" Type="Text" Left="300" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="200682088"/>
+        <Field Name="Edit101_4" Type="Text" Left="345" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="200830120"/>
+        <Field Name="Edit101_5" Type="Text" Left="390" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="200977592"/>
+        <Field Name="Edit101_6" Type="Text" Left="435" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="201124848"/>
+        <Field Name="Edit101_7" Type="Text" Left="475" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="201272804"/>
+        <Field Name="Edit101_8" Type="Text" Left="520" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No" ID="201420236"/>
+        <Field Name="Edit101_9" Type="Text" Left="565" Top="1275" Height="22" Length="1" Usage="View" ReadOnly="Yes" Database="No"/>
+        <Field Name="Edit101_10" Type="Text" Left="610" Top="1275" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_1" Type="Text" Left="260" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_2" Type="Text" Left="300" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_3" Type="Text" Left="345" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_4" Type="Text" Left="390" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_5" Type="Text" Left="435" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_6" Type="Text" Left="475" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_7" Type="Text" Left="520" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_8" Type="Text" Left="565" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110_9" Type="Text" Left="610" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110A_1" Type="Text" Left="655" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit110A_2" Type="Text" Left="700" Top="1345" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_1" Type="Text" Left="260" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_2" Type="Text" Left="300" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_3" Type="Text" Left="345" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_4" Type="Text" Left="390" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_5" Type="Text" Left="435" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_6" Type="Text" Left="475" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_7" Type="Text" Left="520" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_8" Type="Text" Left="565" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111_9" Type="Text" Left="610" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111A_1" Type="Text" Left="655" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit111A_2" Type="Text" Left="700" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_1" Type="Text" Left="260" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_2" Type="Text" Left="300" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_3" Type="Text" Left="345" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_4" Type="Text" Left="390" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_5" Type="Text" Left="435" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_6" Type="Text" Left="470" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_7" Type="Text" Left="520" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_8" Type="Text" Left="565" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205_9" Type="Text" Left="610" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205A_1" Type="Text" Left="655" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit205A_2" Type="Text" Left="700" Top="1480" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_1" Type="Text" Left="260" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_2" Type="Text" Left="300" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_3" Type="Text" Left="345" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_4" Type="Text" Left="390" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_5" Type="Text" Left="435" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_6" Type="Text" Left="475" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_7" Type="Text" Left="520" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_8" Type="Text" Left="565" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405_9" Type="Text" Left="610" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405A_1" Type="Text" Left="655" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit405A_2" Type="Text" Left="700" Top="1540" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_1" Type="Text" Left="970" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_2" Type="Text" Left="1010" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_3" Type="Text" Left="1055" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_4" Type="Text" Left="1100" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_5" Type="Text" Left="1145" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_6" Type="Text" Left="1190" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_7" Type="Text" Left="1235" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_8" Type="Text" Left="1280" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105_9" Type="Text" Left="1320" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105A_1" Type="Text" Left="1365" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit105A_2" Type="Text" Left="1410" Top="1340" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_1" Type="Text" Left="970" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_2" Type="Text" Left="1010" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_3" Type="Text" Left="1055" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_4" Type="Text" Left="1100" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_5" Type="Text" Left="1145" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_6" Type="Text" Left="1190" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_7" Type="Text" Left="1235" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_8" Type="Text" Left="1280" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108_9" Type="Text" Left="1320" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108A_1" Type="Text" Left="1365" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit108A_2" Type="Text" Left="1410" Top="1410" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_1" Type="Text" Left="970" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_2" Type="Text" Left="1010" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_3" Type="Text" Left="1055" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_4" Type="Text" Left="1100" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_5" Type="Text" Left="1145" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_6" Type="Text" Left="1190" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_7" Type="Text" Left="1235" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_8" Type="Text" Left="1280" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109_9" Type="Text" Left="1320" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109A_1" Type="Text" Left="1365" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109A_2" Type="Text" Left="1410" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit109Z" Type="Text" Left="920" Top="1470" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_1" Type="Text" Left="970" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_2" Type="Text" Left="1010" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_3" Type="Text" Left="1055" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_4" Type="Text" Left="1100" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_5" Type="Text" Left="1145" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_6" Type="Text" Left="1190" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_7" Type="Text" Left="1235" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_8" Type="Text" Left="1280" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114_9" Type="Text" Left="1320" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114A_1" Type="Text" Left="1365" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit114A_2" Type="Text" Left="1410" Top="1530" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_1" Type="Text" Left="970" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_2" Type="Text" Left="1010" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_3" Type="Text" Left="1055" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_4" Type="Text" Left="1100" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_5" Type="Text" Left="1145" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_6" Type="Text" Left="1190" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_7" Type="Text" Left="1235" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_8" Type="Text" Left="1280" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115_9" Type="Text" Left="1320" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115A_1" Type="Text" Left="1365" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="Edit115A_2" Type="Text" Left="1410" Top="1605" Height="24" Length="1" ReadOnly="Yes" Database="No" Usage="View"/>
+        <Field Name="EditBN" Type="Text" Left="88" Top="1595" Height="24" Length="24" ReadOnly="Yes" Database="No" Usage="View" Right="360"/>
+        <Field Name="EditFrom" Type="Text" Left="425" Top="1595" Height="24" Length="24" ReadOnly="Yes" Database="No" Usage="View" Right="560"/>
+        <Field Name="EditTo" Type="Text" Left="600" Top="1595" Height="24" Length="24" ReadOnly="Yes" Database="No" Usage="View" Right="750"/>
+        <Field Name="EditMonth" Type="Text" Left="1330" Top="1750" Height="24" Length="3" ReadOnly="Yes" Database="No" Usage="View" Right="1360"/>
+        <Field Name="EditDay" Type="Text" Left="1270" Top="1750" Height="24" Length="2" ReadOnly="Yes" Database="No" Usage="View" Right="1300"/>
+        <Field Name="EditYear" Type="Text" Left="1380" Top="1750" Height="24" Length="4" ReadOnly="Yes" Database="No" Usage="View" Right="1445"/>
+      </Item>
+    </Group>
+    <Item Name="11076" File="11076.wmf" ID="11076" Profile="Person" Short_Name="F11076" Description="Request for Birth, Marriage or Death Certificate" SID="3" Type="Personal">
+      <Field Name="EditName" Type="Text" Left="37" Top="250" Height="22" Right="760" Length="40"/>
+      <Field Name="EditStreet" Type="Text" Left="37" Top="300" Height="22" Right="640" Length="40"/>
+      <Field Name="EditRoom" Type="Text" Left="670" Top="300" Height="22" Right="760" Length="5"/>
+      <Field Name="EditCity" Type="Text" Left="37" Top="360" Height="22" Right="760" Length="20"/>
+      <Field Name="EditProvince" Type="Text" Left="37" Top="415" Height="22" Right="350" Length="20"/>
+      <Field Name="EditPostal" Type="Text" Left="370" Top="415" Height="22" Right="760" Length="7"/>
+      <Field Name="EditNameBirth" Type="Text" Left="37" Top="600" Height="22" Right="950" Length="40"/>
+      <Field Name="EditBirthDay" Type="INT" Left="1015" Top="600" Right="1125" Height="22" Length="2" Database="No"/>
+      <Field Name="EditBirthMonth" Type="INT" Left="1200" Top="600" Right="1310" Height="22" Length="2" Database="No"/>
+      <Field Name="EditBirthYear" Type="INT" Left="1370" Top="600" Right="1438" Height="22" Length="4" SQL="LONG"/>
+      <Field Name="EditBirthPlace" Type="Text" Left="37" Top="655" Right="600" Height="22" Length="20"/>
+      <Field Name="EditBirthSex" Type="Text" Left="620" Top="655" Right="720" Height="22" Length="6"/>
+      <Field Name="EditBirthFather" Type="Text" Left="750" Top="655" Right="1438" Height="22" Length="40"/>
+      <Field Name="EditBirthMother" Type="Text" Left="37" Top="710" Right="960" Height="22" Length="40"/>
+      <Field Name="EditBirthOtherName" Type="Text" Left="980" Top="710" Right="1438" Height="22" Length="40"/>
+      <Field Name="EditBirth1" Type="INT" Left="25" Top="780" Right="70" Height="22" Length="2"/>
+      <Field Name="EditBirth2" Type="INT" Left="515" Top="780" Right="550" Height="22" Length="2"/>
+      <Field Name="EditBirth3" Type="INT" Left="995" Top="780" Right="1040" Height="22" Length="2"/>
+      <Field Name="EditMName" Type="Text" Left="40" Top="895" Right="1438" Height="22" Length="96"/>
+      <Field Name="EditMBride" Type="Text" Left="37" Top="950" Right="950" Height="22" Length="40"/>
+      <Field Name="EditMOther" Type="Text" Left="980" Top="950" Right="1438" Height="22" Length="20"/>
+      <Field Name="EditMDay" Type="INT" Left="70" Top="1010" Right="130" Height="22" Length="2" Database="No"/>
+      <Field Name="EditMMonth" Type="INT" Left="200" Top="1010" Right="270" Height="22" Length="2" Database="No"/>
+      <Field Name="EditMYear" Type="INT" Left="320" Top="1010" Right="410" Height="22" Length="4" SQL="LONG"/>
+      <Field Name="EditMPlace" Type="Text" Left="440" Top="1010" Right="1438" Height="22" Length="20"/>
+      <Field Name="EditM1" Type="INT" Left="25" Top="1075" Right="70" Height="22" Length="2"/>
+      <Field Name="EditM2" Type="INT" Left="525" Top="1075" Right="560" Height="22" Length="2"/>
+      <Field Name="EditM3" Type="INT" Left="1015" Top="1075" Right="1055" Height="22" Length="2"/>
+      <Field Name="EditDeathName" Type="Text" Left="40" Top="1200" Right="840" Height="22" Length="96"/>
+      <Field Name="EditDeathDay" Type="INT" Left="895" Top="1200" Right="960" Height="22" Length="2" Database="No"/>
+      <Field Name="EditDeathMonth" Type="INT" Left="1020" Top="1200" Right="1080" Height="22" Length="2" Database="No"/>
+      <Field Name="EditDeathYear" Type="INT" Left="1130" Top="1200" Right="1200" Height="22" Length="4" SQL="LONG"/>
+      <Field Name="EditDeathSex" Type="Text" Left="1230" Top="1200" Right="1300" Height="22" Length="6"/>
+      <Field Name="EditDeathAge" Type="INT" Left="1320" Top="1200" Right="1438" Height="22" Length="3"/>
+      <Field Name="EditDeathPlace" Type="Text" Left="37" Top="1255" Right="600" Height="22" Length="20"/>
+      <Field Name="EditDeathHusband" Type="Text" Left="620" Top="1255" Right="1438" Height="22" Length="40"/>
+      <Field Name="EditDeathFather" Type="Text" Left="37" Top="1305" Right="720" Height="22" Length="40"/>
+      <Field Name="EditDeathMother" Type="Text" Left="745" Top="1305" Right="1438" Height="22" Length="40"/>
+      <Field Name="EditDeath1" Type="INT" Left="25" Top="1370" Right="70" Height="22" Length="2"/>
+      <Field Name="EditDeath2" Type="INT" Left="510" Top="1370" Right="555" Height="22" Length="3"/>
+      <Field Name="CheckBox1" Type="Check" Left="20" Top="1509" Height="20" SQL="BIT"/>
+      <Field Name="CheckBox2" Type="Check" Left="765" Top="1509" Height="20" SQL="BIT"/>
+      <Field Name="CheckBox3" Type="Check" Left="885" Top="1509" Height="20" Description=" " SQL="BIT"/>
+      <Field Name="EditTotal" Type="INT" Left="1220" Top="1505" Right="1438" Height="22" Length="12"/>
+      <Field Name="EditFeeName" Type="Text" Left="37" Top="1580" Right="430" Height="22" Length="35"/>
+      <Field Name="EditFeeCard" Type="INT" Left="860" Top="1580" Right="1270" Height="22" Length="16"/>
+      <Field Name="EditFeeDate" Type="DATE" Left="1295" Top="1580" Right="1438" Height="22" Length="10"/>
+      <Field Name="EditWhy" Type="Text" Left="37" Top="1775" Right="720" Height="22" Length="60"/>
+      <Field Name="EditWhat" Type="Text" Left="1090" Top="1775" Right="1438" Height="22" Length="20"/>
+      <Field Name="EditDay" Type="INT" Left="540" Top="1830" Right="610" Height="22" Length="2" Database="No"/>
+      <Field Name="EditMonth" Type="INT" Left="670" Top="1830" Right="750" Zooming="100" Height="22" Length="2" Database="No"/>
+      <Field Name="EditYear" Type="INT" Left="790" Top="1830" Right="840" Height="22" Length="4" Database="No"/>
+      <Field Name="EditCodeHome" Type="INT" Left="875" Top="1830" Right="950" Height="22" Length="3"/>
+      <Field Name="EditPhoneHome" Type="PHONE" Left="980" Top="1830" Right="1130" Height="22" Length="9"/>
+      <Field Name="EditCodeWork" Type="INT" Left="1170" Top="1830" Right="1250" Height="22" Length="3"/>
+      <Field Name="EditWorkPhone" Type="PHONE" Left="1270" Top="1830" Right="1438" Height="22" Length="9"/>
+    </Item>
+    <Item Name="NAS2120B" File="NAS2120B.wmf" ID="10003" Short_Name="NAS2120" Description="Application for replacing SIN card" Profile="Person" SID="4" Type="Personal">
+      <Field Name="CheckBoxFirst" Left="25" Top="261" Height="16" SQL="BIT" Type="BOOL"/>
+      <Field Name="CheckBoxReplace" Left="25" Top="290" Height="16" SQL="BIT" Type="BOOL"/>
+      <Field Name="CheckBoxName" Left="25" Top="322" Height="16" SQL="BIT" Type="BOOL"/>
+      <Field Name="CheckBoxStatus" Left="25" Top="353" Height="16" SQL="BIT" Type="BOOL"/>
+      <Field Name="CheckBoxOther" Left="25" Top="383" Height="16" SQL="BIT" Type="BOOL"/>
+      <Field Name="EditName" Left="220" Top="500" Height="24" Type="STRING" Right="644" Length="20"/>
+      <Field Name="EditMiddle" Left="654" Top="500" Height="24" Type="STRING" Right="1057" Length="20"/>
+      <Field Name="EditFamily" Left="1070" Top="500" Height="24" Type="STRING" Right="1440" Length="20"/>
+      <Field Name="EditDay" Left="444" Top="580" Height="24" Type="INT" Right="516" Length="2" Database="No"/>
+      <Field Name="EditMonth" Left="533" Top="580" Height="24" Type="INT" Right="604" Length="2" Database="No"/>
+      <Field Name="EditYear" Left="624" Top="580" Height="24" Type="INT" Right="691" Length="4" SQL="LONG"/>
+      <Field Name="CheckBoxMale" Left="880" Top="550" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxFemale" Left="880" Top="590" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxTwin" Left="1098" Top="578" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="EditMother" Left="72" Top="660" Height="24" Type="STRING" Right="700" Length="40"/>
+      <Field Name="EditFather" Left="750" Top="660" Height="24" Type="STRING" Right="1440" Length="40"/>
+      <Field Name="EditCity" Left="225" Top="734" Height="24" Type="STRING" Right="540" Length="20"/>
+      <Field Name="EditProvince" Left="560" Top="734" Height="24" Type="STRING" Right="900" Length="20"/>
+      <Field Name="EditCountry" Left="920" Top="734" Height="24" Type="STRING" Right="1440" Length="24"/>
+      <Field Name="EditNameBirth" Left="72" Top="820" Height="24" Type="STRING" Right="700" Length="40"/>
+      <Field Name="EditNameOther" Left="750" Top="820" Height="24" Type="STRING" Right="1440" Length="40"/>
+      <Field Name="CheckBoxSINNo" Left="411" Top="881" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxSINYes" Left="544" Top="881" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="Edit1" Left="1056" Top="900" Height="24" Type="INT" Length="1" SQL="LONG"/>
+      <Field Name="Edit2" Left="1088" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit3" Left="1134" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit4" Left="1176" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit5" Left="1220" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit6" Left="1264" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit7" Left="1310" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit8" Left="1354" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="Edit9" Left="1392" Top="900" Height="24" Type="INT" Length="1" Database="No"/>
+      <Field Name="CheckBoxCitizen" Left="251" Top="961" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxIndian" Left="400" Top="961" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxResident" Left="581" Top="961" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="CheckBoxOtherStatus" Left="770" Top="961" Height="24" Type="BOOL" SQL="BIT"/>
+      <Field Name="EditHomeCode" Left="1102" Top="947" Height="24" Type="PHONE" Right="1200" Length="3" SQL="INT"/>
+      <Field Name="EditHomePhone" Left="1220" Top="947" Height="24" Type="PHONE" Right="1436" Length="9" SQL="varchar(9)"/>
+      <Field Name="EditWorkCode" Left="1102" Top="983" Height="24" Type="PHONE" Right="1200" Length="3" SQL="INT"/>
+      <Field Name="EditWorkPhone" Left="1220" Top="983" Height="24" Type="PHONE" Right="1436" Length="9" SQL="varchar(9)"/>
+      <Field Name="EditStreet" Left="254" Top="1052" Height="24" Type="STRING" Right="1180" Length="20"/>
+      <Field Name="EditRoom" Left="1190" Top="1052" Height="24" Type="STRING" Right="1436" Length="5"/>
+      <Field Name="EditMailCity" Left="254" Top="1130" Height="24" Type="STRING" Right="925" Length="20"/>
+      <Field Name="EditMailProvince" Left="932" Top="1130" Height="24" Type="STRING" Right="1180" Length="20"/>
+      <Field Name="EditPostal" Left="1190" Top="1130" Height="24" Type="STRING" Right="1436" Length="7"/>
+      <Field Name="EditDate" Left="1270" Top="1215" Height="24" Type="DATE" Right="1436" Length="10" Database="No"/>
+    </Item>
+  </Project>
+  <Item Name="PRO336" File="PRO336.wmf" ID="336" Short_Name="PRO336" Description="Retail Sales Tax Return" SID="5" Profile="Person">
+    <Field Name="EditName" Left="220" Top="500" Height="24" Type="STRING" Right="644" Length="40"/>
+    <Field Name="CheckBoxMale" Left="880" Top="549" Height="24" Type="BOOL" SQL="BIT"/>
+    <Field Name="CheckBoxFemale" Left="880" Top="588" Height="24" Type="BOOL" SQL="BIT"/>
+    <Field Name="Edit1" Left="1056" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit2" Left="1088" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit3" Left="1134" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit4" Left="1176" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit5" Left="1220" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit6" Left="1264" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit7" Left="1310" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit8" Left="1354" Top="900" Height="24" Type="STRING" Length="1"/>
+    <Field Name="Edit9" Left="1392" Top="900" Height="24" Type="STRING" Length="1"/>
+  </Item>
+  <Item Name="TD1E" File="td1e.bmp" ID="10001" Short_Name="TD1E" Scale="5" Description="Personal Tax Credit Return" Profile="Person">
+    <Field Name="EditLastName" Type="Text" Left="65" Top="220" Height="22" Length="64" Right="600"/>
+    <Field Name="EditFirstName" Type="Text" Left="610" Top="220" Height="22" Length="64" Right="1125"/>
+    <Field Name="EditNumber" Type="Text" Left="1160" Top="220" Height="22" Length="12" Right="1448"/>
+    <Field Name="EditAddress1" Type="Text" Left="65" Top="280" Height="22" Length="64" Right="780"/>
+    <Field Name="EditAddress2" Type="Text" Left="65" Top="340" Height="22" Length="32" Right="580"/>
+    <Field Name="EditPostBox" Type="Text" Left="595" Top="340" Height="22" Length="10" Right="780"/>
+    <Field Name="EditCounty" Type="Text" Left="795" Top="340" Height="22" Length="16" Right="1125"/>
+    <Field Name="EditSIN" Type="Text" Left="1160" Top="280" Height="22" Length="16" Right="1448" Space="6"/>
+    <Field Name="EditBirth" Type="Text" Left="1200" Top="342" Height="22" Length="16" Right="1448" Space="8"/>
+    <Field Name="EditF1" Type="Text" Left="1220" Top="450" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF2" Type="Text" Left="1220" Top="510" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF3" Type="Text" Left="1220" Top="570" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF4" Type="Text" Left="1220" Top="630" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF5" Type="Text" Left="1220" Top="690" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF6" Type="Text" Left="1220" Top="750" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF7" Type="Text" Left="1220" Top="810" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF8" Type="Text" Left="1220" Top="870" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF9" Type="Text" Left="1220" Top="930" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF10" Type="Text" Left="1220" Top="990" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF11" Type="Text" Left="1220" Top="1100" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF12" Type="Text" Left="1220" Top="1160" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF13" Type="Text" Left="1220" Top="1210" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditF14" Type="Text" Left="1220" Top="1280" Height="22" Length="9" Right="1352"/>
+    <Field Name="EditSUM" Type="Text" Left="1240" Top="1350" Height="22" Length="12" Right="1422" ReadOnly="Yes"/>
+    <Field Name="EditBox" Type="Text" Left="1260" Top="1450" Height="22" Length="2" Right="1290"/>
+    <Field Name="EditAddTax" Type="Text" Left="1240" Top="1630" Height="22" Length="12" Right="1422"/>
+    <Field Name="EditDate" Type="Text" Left="1120" Top="1810" Height="22" Length="22" Right="1317"/>
+  </Item>
+  <Item Name="RC1E - Request for Bussiness number" File="RC1E1a.bmp" ID="10004">
+    <Field Name="Vendor" Type="Text" Left="24" Top="56" Width="217" Height="22" Zooming="80"/>
+    <Field Name="Permit" Type="Number" Left="248" Top="56" Width="81" Height="22" Zooming="80"/>
+    <Field Name="From" Type="Text" Left="48" Top="96" Width="73" Height="22" Zooming="80"/>
+    <Field Name="To" Type="Text" Left="144" Top="96" Width="97" Height="22" Zooming="80"/>
+    <Field Name="Return Due Data" Type="Data" Left="248" Top="96" Width="81" Height="22" Zooming="80"/>
+    <Field Name="Total Sales" Type="Currence" Left="432" Top="16" Width="158" Height="22" Zooming="80"/>
+    <Field Name="Total On Sales" Type="Currence" Left="448" Top="40" Width="141" Height="22" Zooming="80"/>
+    <Field Name="Tax Payment" Type="Currence" Left="448" Top="64" Width="141" Height="22" Zooming="80"/>
+    <Field Name="Currence course" Type="Currence" Left="496" Top="88" Width="94" Height="22" Zooming="80"/>
+    <Field Name="Convergation" Type="Currence" Left="496" Top="112" Width="94" Height="22" Zooming="80"/>
+    <Field Name="Equvialence" Type="Currence" Left="424" Top="136" Width="161" Height="22" Zooming="80"/>
+    <Field Name="Total Tax Due" Type="Currence" Left="448" Top="160" Width="137" Height="22" Zooming="80"/>
+  </Item>
+</root>
